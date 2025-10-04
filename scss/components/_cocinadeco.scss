@@ -1,0 +1,74 @@
+main {
+  h2 {
+    @extend %titulo; 
+  }
+
+  .cocinadeco {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    h3 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $color-principal;
+      font-size: 20px;
+      margin: 20px;
+    }
+
+    div {
+      img {
+        width: 250px;
+        height: 250px;
+       }
+     }
+  }
+
+  
+  a {
+      @extend %boton;
+      width: fit-content;
+      display: block;
+      text-align: center;
+      margin: 20px auto;
+  }
+}
+
+.cocinadeco {
+  .carousel {
+    position: relative;
+
+    .carousel-control-prev,
+    .carousel-control-next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: auto; 
+      height: auto; 
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-color: $color-principal;
+      border-radius: 50%;
+      padding: 15px;
+      background-size: 60%, 60%;
+
+      &:hover {
+        background-color: rgba(0, 123, 255, 1);
+      }
+    }
+
+    .carousel-inner {
+      div {
+        img {
+          width: 250px;
+          height: 250px;
+          display: block;
+          margin: 0 auto; 
+         }
+      }
+    }
+  }
+}

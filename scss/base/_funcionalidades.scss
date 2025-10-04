@@ -1,0 +1,42 @@
+$color-principal: rgb(110, 37, 116);
+$color-secundario: rgb(224, 226, 225);
+$color-terciario: rgb(223, 197, 226);
+
+
+%boton{
+    text-decoration: none;
+    color: $color-secundario;
+    background-color: $color-principal;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+%parrafo{
+    color: $color-principal;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    text-align: center;
+    font-style: italic;
+    margin: 20px; 
+}
+%titulo{
+    color: $color-secundario;
+    background-color: $color-principal;
+    font-size: 25px;
+    text-decoration: underline;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    text-align: center;
+    margin: 20px 0px 20px 0px;
+}
+
+@mixin imagen-hover($size, $effect: rotate(360deg)) {
+  width: $size;
+  height: $size;
+  transition: transform 0.5s ease;
+
+  &:hover {
+    transform: $effect;
+  }
+}

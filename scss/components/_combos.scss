@@ -1,0 +1,57 @@
+.combos {
+  h2 {
+    @extend %titulo;
+  }
+
+  .gridcombos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 200px 200px 200px;
+    column-gap: 10px;
+    grid-template-areas:
+      "tit1 sushi tit3"
+      "platos sushi toilette"
+      "platos tit2 toilette";
+
+      h3{
+        color: $color-principal;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+
+    .tit1,
+    .tit2,
+    .tit3 {
+      font-size: 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .tit1 { grid-area: tit1; }
+    .tit2 { grid-area: tit2; }
+    .tit3 { grid-area: tit3; }
+
+    .platos { grid-area: platos; }
+    .sushi { grid-area: sushi; }
+    .toilette { grid-area: toilette; }
+  }
+
+  .formcombo {
+    color: $color-principal;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .vamos {
+      margin: 20px;
+      background-color: $color-principal;
+      color: $color-secundario;
+      padding: 10px 20px;
+      }
+    }
+  }

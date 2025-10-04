@@ -1,0 +1,30 @@
+header {
+  background-color: $color-secundario;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  img {
+    @include imagen-hover(100px);
+  }
+
+  nav {
+    ul {
+      li {
+        display: inline-block;
+        margin-right: 20px;
+        color: $color-principal;
+
+        a {
+          text-decoration: none;
+          color: $color-principal;
+
+          &:hover {
+            background-color: $color-principal;
+            color: $color-secundario;
+          }
+        }
+      }
+    }
+  }
+}

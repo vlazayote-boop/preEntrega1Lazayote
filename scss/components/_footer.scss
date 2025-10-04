@@ -1,0 +1,19 @@
+footer{
+    background-color: $color-terciario;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    div{
+        a{
+            display: block;
+        }
+    }
+    div{
+        img{
+            @include imagen-hover(100px);
+        }
+    }
+    img{
+        @include imagen-hover(100px);
+    }
+}
