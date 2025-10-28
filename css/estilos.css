@@ -44,10 +44,6 @@ main img {
 }
 
 @media screen and (max-width: 680px) {
-  body header nav ul li {
-    display: block;
-    margin-right: 10px;
-  }
   .principal {
     height: 700px;
   }
@@ -83,7 +79,7 @@ main img {
     width: 50%;
     height: 50%;
   }
-  .gridcombos {
+  Body .combos .gridcombos {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 200px 200px 200px;
@@ -94,19 +90,19 @@ main img {
     display: flex;
     flex-direction: column;
   }
-  .unicas {
+  body .unicas {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 300px 200px 200px 200px 200px;
     column-gap: 5px;
-    margin: 20px 10px;
+    margin: 20px 10px 20px 10px;
     grid-template-areas: "festejo festejo" "evento eve1" "evento eve5" "evento eve4" "eve2 eve3";
   }
-  .unicas .festejo h3 {
+  body .festejo h3 {
     font-size: 20px;
     margin: 5px;
   }
-  .unicas .festejo p {
+  body .festejo p {
     font-size: 15px;
     margin: 5px;
   }
@@ -249,6 +245,23 @@ footer img:hover {
   transform: rotate(360deg);
 }
 
+.hablacon {
+  color: rgb(110, 37, 116);
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hablacon .btn {
+  color: rgb(224, 226, 225);
+  background-color: rgb(110, 37, 116);
+}
+.hablacon div {
+  display: block;
+  text-align: center;
+  margin: 20px;
+}
+
 header {
   background-color: rgb(224, 226, 225);
   display: flex;
@@ -336,6 +349,53 @@ section .tarjetas div h3 {
   font-size: 20px;
   margin: 20px;
   text-align: center;
+}
+.unicas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 200px 200px 200px 200px;
+  column-gap: 0px;
+  margin: 10px 20px 10px 20px;
+  grid-template-areas: "evento eve1 festejo" "evento eve5 festejo" "evento eve4 festejo" "eve2 eve3 festejo";
+}
+.unicas .festejo {
+  grid-area: festejo;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.unicas .festejo h3 {
+  font-size: 25px;
+  font-style: italic;
+  color: rgb(110, 37, 116);
+}
+.unicas .festejo p {
+  font-size: 20px;
+  color: rgb(110, 37, 116);
+}
+.unicas img {
+  width: 80%;
+  height: 200px;
+}
+.unicas .evento {
+  grid-area: evento;
+  height: 100%;
+}
+.unicas .eve1 {
+  grid-area: eve1;
+}
+.unicas .eve2 {
+  grid-area: eve2;
+}
+.unicas .eve3 {
+  grid-area: eve3;
+}
+.unicas .eve4 {
+  grid-area: eve4;
+}
+.unicas .eve5 {
+  grid-area: eve5;
 }
 
 /*# sourceMappingURL=estilos.css.map */

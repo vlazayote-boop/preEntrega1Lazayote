@@ -1,20 +1,8 @@
 @media screen and (max-width: 680px) {
-  body{
-  header{
-       nav{ 
-        ul{ 
-          li {
-          display: block;
-          margin-right: 10px;
-          }
-        }
-      }
-    }
-  }
 
-   .principal {
+  .principal {
     height: 700px;
-   }
+  }
 
   main {
     section {
@@ -40,13 +28,14 @@
     }
   }
 
-   .tarjetas {
+  .tarjetas {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   }
-   .cocinadeco {
+  }
+
+  .cocinadeco {
     display: block;
     text-align: center;
 
@@ -54,51 +43,54 @@
       width: 50%;
       height: 50%;
     }
-   }
-     .gridcombos {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 200px 200px 200px;
-    column-gap: 10px;
-    grid-template-areas:
-      "tit1 platos"
-      "tit2 sushi"
-      "tit3 toilette";
+  }
+  Body{
+  .combos {
+    .gridcombos {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 200px 200px 200px;
+      column-gap: 10px;
+      grid-template-areas: "tit1 platos"
+        "tit2 sushi"
+        "tit3 toilette";
     }
-
-     .formcombo {
-        div {
-       label {
+    }
+  }
+  .formcombo {
+    div {
+      label {
         display: flex;
         flex-direction: column;
-       }
       }
     }
-    .unicas {
+  }
+body{
+  .unicas {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 300px 200px 200px 200px 200px;
     column-gap: 5px;
-    margin: 20px 10px;
-    grid-template-areas:
-      "festejo festejo"
+    margin: 20px 10px 20px 10px;
+    grid-template-areas: "festejo festejo"
       "evento eve1"
       "evento eve5"
       "evento eve4"
       "eve2 eve3";
+  }
 
   .festejo {
     h3 {
       font-size: 20px;
       margin: 5px;
     }
+
     p {
       font-size: 15px;
       margin: 5px;
-     }
     }
-   }
-
+  }
+}
   .hablacon {
     div {
       display: flex;

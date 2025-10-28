@@ -1,0 +1,64 @@
+.unicas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 200px 200px 200px 200px;
+    column-gap: 0px;
+    margin: 10px 20px 10px 20px;
+    grid-template-areas: "evento eve1 festejo"
+        "evento eve5 festejo"
+        "evento eve4 festejo"
+        "eve2 eve3 festejo";
+
+    .festejo {
+        grid-area: festejo;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h3 {
+            font-size: 25px;
+            font-style: italic;
+            color: $color-principal;
+        }
+
+        p {
+            font-size: 20px;
+            color: $color-principal;
+        }
+    }
+
+    img {
+        width: 80%;
+        height: 200px;
+    
+    }
+
+        .evento {
+            grid-area: evento;
+            height: 100%;
+        }
+
+        .eve1 {
+            grid-area: eve1;
+        }
+
+        .eve2 {
+            grid-area: eve2;
+        }
+
+        .eve3 {
+            grid-area: eve3;
+        }
+
+        .eve4 {
+            grid-area: eve4;
+        }
+
+        .eve5 {
+            grid-area: eve5;
+        }
+
+
+
+}
