@@ -46,6 +46,9 @@
         grid-template-areas: "tit1 platos"
           "tit2 sushi"
           "tit3 toilette";
+          img{
+            box-shadow: none;
+          }
       }
     }
 

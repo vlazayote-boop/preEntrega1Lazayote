@@ -1,4 +1,4 @@
-.principal{
+.principal {
     background-image: url(../img/backhero.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -8,73 +8,86 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    h1{
-    color: $color-principal;
-    font-size: 40px;
-    text-align: center;
-    text-decoration: underline;
-    font-family: 'Times New Roman', Times, serif;
-    font-style: oblique;
-    padding: 0px 10px 20px 10px;
+
+    h1 {
+        color: $color-principal;
+        font-size: 40px;
+        text-align: center;
+        text-decoration: underline;
+        font-family: 'Times New Roman', Times, serif;
+        font-style: oblique;
+        padding: 0px 10px 20px 10px;
     }
-    p{
+
+    p {
         @extend %parrafo;
 
     }
-        a{
-            @extend %boton;
-        }
+
+    a {
+        @extend %boton;
+    }
 }
-.video{
+
+.video {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    iframe{
+
+    iframe {
         margin: 20px;
         width: 25%;
     }
-    .videotext{
+
+    .videotext {
         width: 60%;
         padding: 20px;
         @extend %parrafo;
     }
 }
-section{
+
+section {
     width: 100%;
     height: 100%;
-    h2{
+
+    h2 {
         @extend %titulo;
     }
-    .tarjetas{
-       display: flex;
-       flex-wrap: wrap;
-       justify-content: center;
-        div{
-           margin-right: 40px;
-           text-align: center;
-           border: 2px solid $color-principal;
-           width: 304px;
-           height: 450px;
-            img{
+
+    .tarjetas {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        div {
+            margin-right: 40px;
+            text-align: center;
+            border: 2px solid $color-principal;
+            width: 304px;
+            height: 450px;
+            box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.2);
+
+            img {
                 width: 300px;
                 height: 300px;
             }
-            h3{
+
+            h3 {
                 color: $color-principal;
                 font-size: 20px;
                 margin: 20px;
                 text-align: center
             }
-    
-                a{
-                    @extend %boton;
-                }
+
+            a {
+                @extend %boton;
+            }
         }
 
     }
-        .botones{
-                a{
-                @extend %boton;
-                }
-        }
+
+    .botones a {
+        @extend %boton;
+    }
+
 }
