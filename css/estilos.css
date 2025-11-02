@@ -98,13 +98,11 @@ main img {
     margin: 20px 10px 20px 10px;
     grid-template-areas: "festejo festejo" "evento eve1" "evento eve5" "evento eve4" "eve2 eve3";
   }
-  body .festejo h3 {
+  body .unicas .festejo h3 {
     font-size: 20px;
-    margin: 5px;
   }
-  body .festejo p {
-    font-size: 15px;
-    margin: 5px;
+  body .unicas .festejo p {
+    font-size: 13px;
   }
   .hablacon div {
     display: flex;
